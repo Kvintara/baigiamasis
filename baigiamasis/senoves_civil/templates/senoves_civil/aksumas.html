@@ -1,12 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aksumas</title>
-  </head>
-  <body>
-    <h1>Aksumas</h1>
-  </body>
-</html>
+
+
+{% extends 'senoves_civil/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <h3>Aksumas – didinga Afrikos kultūra, sunaikinta naujos religijos</h3>
+    <img src="{% static 'senoves_civil/images/endubis.jpg' %}">
+    <p>Aksumo imperija − istorinė valstybė, egzistavusi IV a. pr. m. e. − X a. dabartinės šiaurės Etiopijos ir Eritrėjos teritorijose. Klestėjimo laikotarpiu ji 
+        valdė ir kitas sritis, įskaitant ir pietvakarių Arabiją. Valstybės sostinė buvo Aksumas. Nors legendos Aksumo valstybės pradžią nukelia į X a. pr. m. e., 
+        kuomet valdė legendinis imperatorius Menelikas I, Saliamono sūnus, kuris pradėjo Etiopijos imperatorių dinastiją, tikrąja valstybės pradžia yra laikomas 
+        IV a. pr. m. e. (kuomet įkurtas Aksumo pirmtakas Damotas), o pirmieji istoriškai patvirtinti valdovai yra iš I m. e. a. Maždaug nuo III a. jie ėmė tituluoti 
+        save imperatoriais.
+        Nėra aiškūs Aksumo imperijos ryšiai su anksčiau Etiopijoje egzistavusia Damoto valstybe. Gali būti, kad ji peraugo tiesiogiai, arba kad Aksumas buvo viena 
+        iš daugybės valstybėlių, atsiradusių suskilus Damotui. Tikriausiai Aksumo imperijos pradžia buvo Aksumo miestas, aplink kurį vyko valdžios konsolidacija.
+        Aksumo susiformavimui didelę reikšmę turėjo Senovės Jemenas, kurio civilizacija kaip tik klestėjo už Raudonosios jūros, ir kurios gyventojai aktyviai 
+        bendravo su Etiopijos pakrantėmis.</p>
+    <img src="{% static 'senoves_civil/images/aksum.png' %}">
+    <h4>Klestėjimas</h4>
+    <p>I a. Aksumas jau valdė pajūryje buvusį Adulio uostą (50 km į pietus nuo dabartinės Masavos, prie Zulos miesto), kuris suvaidino ypač svarbų vaidmenį 
+        Imperijos istorijoje. Kaip tik tuo metu pasaulyje keitėsi prekybinė sistema. Klestint Romos imperijos ir Indijos prekybai, jūros kelių sistemoje labai 
+        svarbi tapo Raudonoji jūra. Adulis tapo svarbiausiu šios jūros uostu, o Aksumo valstybė įgijo ekonominį privalumą prieš savo kaimynines valstybes − pirmiausia 
+        Nubiją.
+        Nuo III a. Aksumo imperija vykdė teritorinę ir ekonominę ekspansiją. Pirmiausia ji plėtėsi Afrikos rago pakrantėmis ir valdė ilgą Raudonosios jūros pajūrį 
+        nuo dabartinio Egipto iki Somalio. Ilgainiui tai vedė į jos išsiplėtusią hegemoniją už Raudonosios jūros, t. y. dalį Tihamaho ir Senovės Jameno teritorijas, 
+        kur vietinės valstybės buvo ganėtinai nusilpę.
+        Taip pat valstybė aktyviai kišosi į Jemeno valstybių reikalus ir vienu metu kontroliavo dabartinio Jemeno ir pietų Arabijos teritorijas. IV a. ji okupavo 
+        Nubiją, kas jai leido efektyviai panaudoti Nilą savo prekyboje.
+        Tuo metu gyvenęs Manis laikė Aksumą viena iš keturių galingiausių pasaulio imperijų greta Romos, Kinijos ir Sasanidų imperijos.</p>
+    <img src="{% static 'senoves_civil/images/aksumas1.jpg' %}">
+    <h4>Žlugimas</h4>
+    <p>VI a. Aksumo aukso amžius baigėsi. Tai lėmė Romos imperijos žlugimas, taip pat susiformavęs Islamas. Kalifatas nuo VII a. ne kartą puolė Aksumą. Tai lėmė 
+        daugybės sričių netekimą. Buvo prarastas Jemenas, Nubija, kai kurios pajūrio teritorijos bei salos. Tai sužlugdė imperijos prekybą, tačiau tuo metu atsiradę 
+        piratai siautė Arabijos pakrantes ir ne kartą atakavo Hidžazą.
+        Imperijos teritorijos susitraukė iki pirminių sričių dabartinėje Eritrėjoje ir Etiopijos šiaurėje, o gyventojai migravo į piečiau esančius regionus. 
+        Imperijos egzistenciją IX ar X a. nutraukė legendinė pagonių karalienė Jodit, po kurios valdymo atėjo Zagvės dinastija</p>
+    <img src="{% static 'senoves_civil/images/aksumas2.jpg' %}">
+    <h4>Ekonomika</h4>
+    <p>Svarbiausias Aksumo imperijos egzistavimo ir klestėjimo faktorius buvo prekyba, kurios pokyčiai ir lėmė valstybės likimą. Jos suklestėjimą lėmė susiformavęs 
+        jūrinis prekybos kelias, kuris ėjo Raudonąja jūra ir kuriuo praeinančių prekių kiekis viršijo visus kitus kelius.
+        Naudodamiesi šia situacija Aksumo imperatoriai tvarkė šalies vidaus kelius. Turėdami prėjimą prie Nilo aukštupio, jie galėjo naudotis tiek jūra, tiek upe. 
+        Todėl ilgainiui Aksumas tapo svarbiausiu Afrikos ir Azijos prekių tiekėju Romos imperijai.
+        Aksumas nebuvo vien tik kaip prekybos tarpinė zona. Jis pats pardavinėjo savo žemdirbystės ir gyvulininkystės produktus, garsėjo Aksumo auksas, dramblio 
+        kaulas, raganosio ragas, geležies rūda, druska. Šalies galybės laikotarpiu (maždaug 270−610 m.) imperijoje buvo kalami aukštos kokybės pinigai. Tai buvo 
+        pirmoji juodosios Afrikos visuomenė, kalusi pinigus.
+        Po islamo Kalifato susiformavimo, Aksumas tapo ekonomiškai izoliuotas, ir tai buvo viena svarbiausių jo žlugimo priežasčių.</p>
+    <img src="{% static 'senoves_civil/images/aksumas3.jpg' %}">
+    <h4>Visuomenė ir kultūra</h4>
+    <p>Svarbiausia tauta tuometinėje imperijoje buvo habešai, dabartinių amharų ir tigrajų protėviai. Iš jų kalbos susiformavo klasikinė gezo kalba, kuri iki dabar 
+        naudojama Etiopijos liturgijoje, moksle. Jų iš pradžių naudotas pietų arabų raštas ilgainiui išsivystė į etiopų raštą, kai kurių tautų naudojamą iki dabar.
+        IV a. pradžioje, valdant karaliui Ezanai, Etiopija priėmė krikščionybę, susiformavo savarankiška krikščionybės forma − Etiopijos krikščionybė. 451 m. 
+        Chalcedono susirinkime ji buvo pripažinta erezija ir atskirta nuo ortodoksinės krikščionybės. Nepaisant to, Aksumas perėmė labai daug krikščioniškos kultūros 
+        iš Romos, vėliau Bizantijos imperijos.</p>
+    <img src="{% static 'senoves_civil/images/aksumas4.jpg' %}">
+{% endblock %}
