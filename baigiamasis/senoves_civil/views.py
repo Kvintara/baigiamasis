@@ -6,7 +6,7 @@ from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("Senoves civilizacijos")
+    return render(request, 'senoves_civil/index.html')
 
 
 def categories(request, catid):
