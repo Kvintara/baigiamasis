@@ -14,7 +14,7 @@ def aksumas(request):
 
 
 def armenija(request):
-    return render(request, 'senoves_civil/armenija.html', {'title': 'Armenija'})
+    return render(request, 'senoves_civil/armenija.html', {'title': 'Armėnija'})
 
 
 def asirija(request):
@@ -22,7 +22,7 @@ def asirija(request):
 
 
 def cinai(request):
-    return render(request, 'senoves_civil/cinai.html', {'title': 'Cinai'})
+    return render(request, 'senoves_civil/cinai.html', {'title': 'Činai'})
 
 
 def coment(request):
@@ -30,11 +30,11 @@ def coment(request):
 
 
 def dzou(request):
-    return render(request, 'senoves_civil/dzou.html', {'title': 'Dzou'})
+    return render(request, 'senoves_civil/dzou.html', {'title': 'Džou'})
 
 
 def egejas(request):
-    return render(request, 'senoves_civil/egejas.html', {'title': 'Egejas'})
+    return render(request, 'senoves_civil/egejas.html', {'title': 'Egėjas'})
 
 
 def egiptas(request):
@@ -58,7 +58,7 @@ def home(request):
 
 
 def indo_slenis(request):
-    return render(request, 'senoves_civil/indo_slenis.html', {'title': 'Indo Slenis'})
+    return render(request, 'senoves_civil/indo_slenis.html', {'title': 'Indo Slėnis'})
 
 
 def jamas(request):
@@ -74,7 +74,7 @@ def kanaanas(request):
 
 
 def kusas(request):
-    return render(request, 'senoves_civil/kusas.html', {'title': 'Kusas'})
+    return render(request, 'senoves_civil/kusas.html', {'title': 'Kušas'})
 
 
 def libija(request):
@@ -86,7 +86,7 @@ def maurja(request):
 
 
 def mazoji_azija(request):
-    return render(request, 'senoves_civil/mazoji_azija.html', {'title': 'Mazoji Azija'})
+    return render(request, 'senoves_civil/mazoji_azija.html', {'title': 'Mažoji Azija'})
 
 
 def mesopotamija(request):
@@ -110,7 +110,7 @@ def roma(request):
 
 
 def sangai(request):
-    return render(request, 'senoves_civil/sangai.html', {'title': 'Sangai'})
+    return render(request, 'senoves_civil/sangai.html', {'title': 'Šangai'})
 
 
 def sia(request):
@@ -118,7 +118,7 @@ def sia(request):
 
 
 def siognu(request):
-    return render(request, 'senoves_civil/siognu.html', {'title': 'Siognu'})
+    return render(request, 'senoves_civil/siognu.html', {'title': 'Šiognu'})
 
 
 def sirija(request):

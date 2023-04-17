@@ -21,37 +21,36 @@
     <aside>
         
         <ul class="nav-side">
-                <h3>Navigacija</h3>
-            <a href=""><li>Pradinis</li></a>
-            <a href=""><li>Aksumas</li></a>
-            <a href=""><li>Armenija</li></a>
-            <a href=""><li>Asirija</li></a>
-            <a href=""><li>Cinai</li></a>
-            <a href=""><li>Dzou</li></a>
-            <a href=""><li>Egejas</li></a>
-            <a href=""><li>Egiptas</li></a>
-            <a href=""><li>Elamas</li></a>
-            <a href=""><li>Graikija</li></a>
-            <a href=""><li>Hanai</li></a>
-            <a href=""><li>Indo Slenis</li></a>
-            <a href=""><li>Jamas</li></a>
-            <a href=""><li>Jemenas</li></a>
-            <a href=""><li>Kanaanas</li></a>
-            <a href=""><li>Kusas</li></a>
-            <a href=""><li>Libija</li></a>
-            <a href=""><li>Maurja</li></a>
-            <a href=""><li>Mazoji azija</li></a>
-            <a href=""><li>Mesopotamija</li></a>
-            <a href=""><li>Mitanija</li></a>
-            <a href=""><li>Olmekai</li></a>
-            <a href=""><li>Persija</li></a>
-            <a href=""><li>Roma</li></a>
-            <a href=""><li>Sangai</li></a>
-            <a href=""><li>Sia</li></a>
-            <a href=""><li>Siognu</li></a>
-            <a href=""><li>Sirija</li></a>
-            <a href=""><li>Vedai</li></a>
-            <a href=""><li>Komentarai</li></a>
+                <h3>Civilizacijos</h3>
+            <a href="{% url 'home' %}"><li>Pradinis</li></a>
+            <a href="{% url 'aksumas' %}"><li>Aksumas</li></a>
+            <a href="{% url 'armenija' %}"><li>Armėnija</li></a>
+            <a href="{% url 'asirija' %}"><li>Asirija</li></a>
+            <a href="{% url 'cinai' %}"><li>Činai</li></a>
+            <a href="{% url 'dzou' %}"><li>Džou</li></a>
+            <a href="{% url 'egejas' %}"><li>Egėjas</li></a>
+            <a href="{% url 'egiptas' %}"><li>Egiptas</li></a>
+            <a href="{% url 'elamas' %}"><li>Elamas</li></a>
+            <a href="{% url 'graikija' %}"><li>Graikija</li></a>
+            <a href="{% url 'hanai' %}"><li>Hanai</li></a>
+            <a href="{% url 'indo_slenis' %}"><li>Indo Slėnis</li></a>
+            <a href="{% url 'jamas' %}"><li>Jamas</li></a>
+            <a href="{% url 'jemenas' %}"><li>Jemenas</li></a>
+            <a href="{% url 'kanaanas' %}"><li>Kanaanas</li></a>
+            <a href="{% url 'kusas' %}"><li>Kušas</li></a>
+            <a href="{% url 'libija' %}"><li>Libija</li></a>
+            <a href="{% url 'maurja' %}"><li>Maurja</li></a>
+            <a href="{% url 'mazoji_azija' %}"><li>Mažoji azija</li></a>
+            <a href="{% url 'mesopotamija' %}"><li>Mesopotamija</li></a>
+            <a href="{% url 'mitanija' %}"><li>Mitanija</li></a>
+            <a href="{% url 'olmekai' %}"><li>Olmekai</li></a>
+            <a href="{% url 'persija' %}"><li>Persija</li></a>
+            <a href="{% url 'roma' %}"><li>Roma</li></a>
+            <a href="{% url 'sangai' %}"><li>Šangai</li></a>
+            <a href="{% url 'sia' %}"><li>Sia</li></a>
+            <a href="{% url 'siognu' %}"><li>Šiognu</li></a>
+            <a href="{% url 'sirija' %}"><li>Sirija</li></a>
+            <a href="{% url 'vedai' %}"><li>Vedai</li></a>
         </ul>
     </aside>
     <nav class="navbar navbar-expand-sm bg-info navbar-info">
@@ -62,6 +61,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Komentarai</a>
                 </li>
             </ul>
         </div>

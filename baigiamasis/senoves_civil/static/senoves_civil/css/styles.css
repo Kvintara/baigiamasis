@@ -8,13 +8,13 @@ body {
 }
 
 p {
-	width: 60%;
+	width: 65%;
 	height: 60%;
 	text-align: left;
-	margin-left: 500px;
+	margin-left: 400px;
 }
 
-h4, h1 {
+h4, h1, h3 {
 	text-align: center;
 }
 
@@ -35,14 +35,23 @@ img {
 	background-color: #eff153;
 	position: fixed;
 	top: 0;
-	width: 300px;
+	width: 200px;
 	height: 100%;
 	color: #f52121;
 	text-decoration: none;
+	border-right: 5px solid #f8e63f;
+	list-style: none;
+	transition: transform .6s ease;
+}
+
+ul li:hover, ul a:hover {
+    color:#963e23;
+	text-decoration: none;
+	transform: scale(1.2)
 }
 
 .navbar {
-	margin-left: 300px;
+	margin-left: 200px;
 }
 
 .icon-bar {
