@@ -12,3 +12,7 @@ class Civilizacijos(models.Model):
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        verbose_name = 'Senoves Civilizacijos'
+        verbose_name_plural = 'Civilizacijos'
