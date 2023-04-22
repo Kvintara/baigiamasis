@@ -10,13 +10,13 @@
   
   {% if next %}
     {% if user.is_authenticated %}
-      <p>Neturite prieigos prie šios informacijos. Turite prisijungti.</p>
+      <p>Turite prisijungti</p>
     {% endif %}
   {% endif %}
   
   <form method="post" action="{% url 'login' %}">
     {% csrf_token %}
-    <table>
+    <table class="login">
       <tr>
         <td>Vartotojas: </td>
         <td>{{ form.username }}</td>

@@ -1,12 +1,13 @@
 
-from django.http import HttpResponse, HttpResponseNotFound
-from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import render, redirect
+from .models import *
+
+
+# * ------------Register, login, logout----------------
+
 
 # Create views here.
-
-
-def index(request):
-    return render(request, 'senoves_civil/index.html', {'title': 'Senovės civilizacijos'})
 
 
 def aksumas(request):
@@ -23,10 +24,6 @@ def asirija(request):
 
 def cinai(request):
     return render(request, 'senoves_civil/cinai.html', {'title': 'Činai'})
-
-
-def coment(request):
-    return render(request, 'senoves_civil/coment.html', {'title': 'Komentarai'})
 
 
 def dzou(request):
@@ -51,10 +48,6 @@ def graikija(request):
 
 def hanai(request):
     return render(request, 'senoves_civil/hanai.html', {'title': 'Hanai'})
-
-
-def home(request):
-    return render(request, 'senoves_civil/home.html', {'title': 'Senovės civilizacijos'})
 
 
 def indo_slenis(request):
@@ -129,9 +122,23 @@ def vedai(request):
     return render(request, 'senoves_civil/vedai.html', {'title': 'Vedai'})
 
 
-def categories(request, catid):
-    return HttpResponse(f"<h1>Kategorijos</h1><p>{catid}</p>")
+def index(request):
+    return render(request, 'senoves_civil/index.html', {'title': 'Senovės civilizacijos'})
 
 
-def pageNotFound(request, exception):
-    return HttpResponseNotFound("<h1>Puslapis nerastas</h1>")
+def home(request):
+    return render(request, 'senoves_civil/home.html', {'title': 'Senovės civilizacijos'})
+
+
+# * -----------------Registration, login, logout----------------
+
+def login(request):
+    return render(request, 'senoves_civil/login.html', {'title': 'Prisijungimas'})
+
+
+# *--------------Coment-----------
+
+
+def coment(request):
+    coment = Coment.objects.order_by('date')
+    return render(request, 'senoves_civil/coment.html', {'title': 'Komentarai', 'coment': coment})

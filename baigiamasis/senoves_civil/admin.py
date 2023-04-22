@@ -13,3 +13,15 @@ class CivilizacijosAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Civilizacijos, CivilizacijosAdmin)
+
+# *------------------coment------------------
+
+
+class ComentAdmin(admin.ModelAdmin):
+    list_display = ('nick', 'title', 'content', 'date')
+    list_display_links = ('nick', 'title', 'content', 'date')
+    search_fields = ('nick', 'title', 'content', 'date')
+    list_filter = ('nick', 'title', 'content', 'date')
+
+
+admin.site.register(Coment, ComentAdmin)

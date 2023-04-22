@@ -16,3 +16,21 @@ class Civilizacijos(models.Model):
     class Meta:
         verbose_name = 'Senoves Civilizacijos'
         verbose_name_plural = 'Civilizacijos'
+
+
+# *------------------coment------------------
+
+class Coment(models.Model):
+    nick = models.CharField('Nikas', max_length=50)
+    title = models.CharField('Komentaro pavadinimas', max_length=100)
+    content = models.TextField('Komentaras')
+    date = models.DateTimeField('Data', auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Komentaras'
+        verbose_name_plural = 'Komentarai'
+
+# *-------------Register, login, logout----------------

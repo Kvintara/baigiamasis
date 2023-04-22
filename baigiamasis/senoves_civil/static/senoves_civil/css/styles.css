@@ -60,6 +60,32 @@ ul li:hover, ul a:hover {
 	text-align: center;
 }
 
+.login {
+	margin-left: 500px;
+}
 
+td {
+	size: 50px;
+}
 
+.alert-primary {
+	float: left;
+	clear: both;
+	width: 600px;
+	margin: 20px 40%;
+	margin-left: 700px;
+	text-align: left;
 
+}
+
+.features {
+	float: left;
+	color: #3f42f7;
+	margin-top: 10px;
+	text-align: center;
+	width: 75%;
+}
+
+.features h1 {font-size: 50px; margin-left: 650px;}
+
+.features p {max-width: 400px; margin:20px auto;}

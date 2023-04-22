@@ -1,7 +1,19 @@
+
 {% extends 'senoves_civil/base.html' %}
 {% load static %}
 
+{% block title %}Komentarai{% endblock %}
+
+
 {% block content %}
-    <h1>{{ title }}</h1>
-    <p>Komentarai</p>
+    <div class="features">
+        <h1>Komentarai</h1>
+        {% for el in coment %}
+            <div class="alert alert-primary">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.content }}</p>
+                <h4>{{ el.nick }}</h4>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
