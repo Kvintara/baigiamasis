@@ -1,0 +1,91 @@
+
+
+body {
+	background-color: #e1ffff;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: 200;
+}
+
+p {
+	width: 65%;
+	height: 60%;
+	text-align: left;
+	margin-left: 400px;
+}
+
+h4, h1, h3 {
+	text-align: center;
+}
+
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	height: 20%;	
+}
+
+.nav-side {
+	overflow: auto;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: 200;
+	background-color: #eff153;
+	position: fixed;
+	top: 0;
+	width: 200px;
+	height: 100%;
+	color: #f52121;
+	text-decoration: none;
+	border-right: 5px solid #f8e63f;
+	list-style: none;
+	transition: transform .6s ease;
+}
+
+ul li:hover, ul a:hover {
+    color:#963e23;
+	text-decoration: none;
+	transform: scale(1.2)
+}
+
+.navbar {
+	margin-left: 200px;
+}
+
+.icon-bar {
+	height: 20px;
+	width: 1950px;
+	text-align: center;
+}
+
+.login {
+	margin-left: 500px;
+}
+
+td {
+	size: 50px;
+}
+
+.alert-primary {
+	float: left;
+	clear: both;
+	width: 600px;
+	margin: 20px 40%;
+	margin-left: 700px;
+	text-align: left;
+
+}
+
+.features {
+	float: left;
+	color: #3f42f7;
+	margin-top: 10px;
+	text-align: center;
+	width: 75%;
+}
+
+.features h1 {font-size: 50px; margin-left: 650px;}
+
+.features p {max-width: 400px; margin:20px auto;}

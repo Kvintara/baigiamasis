@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>{{ title }}</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{% static 'senoves_civil/css/styles.css' %}" />
+</head>
+<body>
+    
+    
+    <aside>
+        
+        <ul class="nav-side">
+                <h3>Civilizacijos</h3>
+            <a href="{% url 'home' %}"><li>Pradinis</li></a>
+            <a href="{% url 'aksumas' %}"><li>Aksumas</li></a>
+            <a href="{% url 'armenija' %}"><li>Armėnija</li></a>
+            <a href="{% url 'asirija' %}"><li>Asirija</li></a>
+            <a href="{% url 'cinai' %}"><li>Činai</li></a>
+            <a href="{% url 'dzou' %}"><li>Džou</li></a>
+            <a href="{% url 'egejas' %}"><li>Egėjas</li></a>
+            <a href="{% url 'egiptas' %}"><li>Egiptas</li></a>
+            <a href="{% url 'elamas' %}"><li>Elamas</li></a>
+            <a href="{% url 'graikija' %}"><li>Graikija</li></a>
+            <a href="{% url 'hanai' %}"><li>Hanai</li></a>
+            <a href="{% url 'indo_slenis' %}"><li>Indo Slėnis</li></a>
+            <a href="{% url 'jamas' %}"><li>Jamas</li></a>
+            <a href="{% url 'jemenas' %}"><li>Jemenas</li></a>
+            <a href="{% url 'kanaanas' %}"><li>Kanaanas</li></a>
+            <a href="{% url 'kusas' %}"><li>Kušas</li></a>
+            <a href="{% url 'libija' %}"><li>Libija</li></a>
+            <a href="{% url 'maurja' %}"><li>Maurja</li></a>
+            <a href="{% url 'mazoji_azija' %}"><li>Mažoji azija</li></a>
+            <a href="{% url 'mesopotamija' %}"><li>Mesopotamija</li></a>
+            <a href="{% url 'mitanija' %}"><li>Mitanija</li></a>
+            <a href="{% url 'olmekai' %}"><li>Olmekai</li></a>
+            <a href="{% url 'persija' %}"><li>Persija</li></a>
+            <a href="{% url 'roma' %}"><li>Roma</li></a>
+            <a href="{% url 'sangai' %}"><li>Šangai</li></a>
+            <a href="{% url 'sia' %}"><li>Sia</li></a>
+            <a href="{% url 'siognu' %}"><li>Šiognu</li></a>
+            <a href="{% url 'sirija' %}"><li>Sirija</li></a>
+            <a href="{% url 'vedai' %}"><li>Vedai</li></a>
+        </ul>
+    </aside>
+    <nav class="navbar navbar-expand-sm bg-info navbar-info">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'coment' %}">Komentarai</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
